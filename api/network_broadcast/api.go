@@ -5,7 +5,7 @@ import (
 	"github.com/luoqeng/steem-go/types"
 )
 
-const apiID = "network_broadcast_api"
+const apiID = "condenser_api."
 
 //API plug-in structure
 type API struct {
@@ -18,7 +18,7 @@ func NewAPI(caller transports.Caller) *API {
 }
 
 func (api *API) call(method string, params, resp interface{}) error {
-	return api.caller.Call("call", []interface{}{apiID, method, params}, resp)
+	return api.caller.Call(apiID+method, params, resp)
 }
 
 //BroadcastTransaction api request broadcast_transaction

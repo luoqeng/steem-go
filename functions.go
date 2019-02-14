@@ -584,7 +584,8 @@ func (client *Client) AccountCreate(creator, newAccountName, password string, fe
 
 	for _, val := range roles {
 		priv := GetPrivateKey(newAccountName, val, password)
-		pub := GetPublicKey("GLS", priv)
+		// pub := GetPublicKey("GLS", priv)
+		pub := GetPublicKey("TST", priv)
 		listKeys[val] = Keys{Private: priv, Public: pub}
 	}
 

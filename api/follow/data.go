@@ -2,7 +2,7 @@ package follow
 
 import (
 	"encoding/json"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/types"
 )
 
 type FollowObject struct {

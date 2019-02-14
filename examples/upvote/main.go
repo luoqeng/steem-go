@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	client "github.com/asuleymanov/steem-go"
+	client "github.com/luoqeng/steem-go"
 	"github.com/pkg/errors"
 )
 

@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/luoqeng/steem-go/encoding/transaction"
 )
 
 //LimitOrderCreate2Operation represents limit_order_create2 operation data.

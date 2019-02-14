@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/types"
 	"github.com/pkg/errors"
 )
 

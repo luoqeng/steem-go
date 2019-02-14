@@ -3,7 +3,7 @@ package market_history
 import (
 	"fmt"
 
-	"github.com/asuleymanov/steem-go/transports"
+	"github.com/luoqeng/steem-go/transports"
 )
 
 const apiID = "market_history_api"

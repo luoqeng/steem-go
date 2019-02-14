@@ -1,8 +1,8 @@
 package network_broadcast
 
 import (
-	"github.com/asuleymanov/steem-go/transports"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/transports"
+	"github.com/luoqeng/steem-go/types"
 )
 
 const apiID = "network_broadcast_api"

@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/luoqeng/steem-go/encoding/transaction"
 )
 
 //Authority is an additional structure used by other structures.

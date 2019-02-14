@@ -3,9 +3,9 @@ package client
 import (
 	"time"
 
-	"github.com/asuleymanov/steem-go/api/network_broadcast"
-	"github.com/asuleymanov/steem-go/transactions"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/api/network_broadcast"
+	"github.com/luoqeng/steem-go/transactions"
+	"github.com/luoqeng/steem-go/types"
 )
 
 //SendTrx generates and sends an array of transactions to STEEM.

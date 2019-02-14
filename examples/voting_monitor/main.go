@@ -4,12 +4,12 @@ import (
 	"log"
 	"time"
 
-	client "github.com/asuleymanov/rpc"
-	"github.com/asuleymanov/rpc/types"
+	client "github.com/luoqeng/steem-go"
+	"github.com/luoqeng/steem-go/types"
 )
 
 func main() {
-	cls, _ = client.NewClient([]string{"wss://rpc.buildteam.io"}, "steem")
+	cls, err := client.NewClient([]string{"ws://127.0.0.1:8090"})
 	if err != nil {
 		log.Fatalln("Error:", err)
 	}
@@ -67,6 +67,6 @@ func run(cls *client.Client) (err error) {
 		}
 
 		// Sleep for STEEMIT_BLOCK_INTERVAL seconds before the next iteration.
-		time.Sleep(time.Duration(config.SteemitBlockInterval) * time.Second)
+		time.Sleep(time.Duration(config.BlockInterval) * time.Second)
 	}
 }

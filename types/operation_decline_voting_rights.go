@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/luoqeng/steem-go/encoding/transaction"
 )
 
 //DeclineVotingRightsOperation represents decline_voting_rights operation data.

@@ -3,7 +3,7 @@ package types
 import (
 	"encoding/json"
 
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/luoqeng/steem-go/encoding/transaction"
 )
 
 //CommentOptionsOperation represents comment_options operation data.

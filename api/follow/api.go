@@ -3,7 +3,7 @@ package follow
 import (
 	"fmt"
 
-	"github.com/asuleymanov/steem-go/transports"
+	"github.com/luoqeng/steem-go/transports"
 )
 
 const apiID = "follow_api"

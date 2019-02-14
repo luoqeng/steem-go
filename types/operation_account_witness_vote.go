@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/luoqeng/steem-go/encoding/transaction"
 )
 
 //AccountWitnessVoteOperation represents account_witness_vote operation data.

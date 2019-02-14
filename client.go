@@ -1,13 +1,13 @@
 package client
 
 import (
-	"github.com/asuleymanov/steem-go/api/database"
-	"github.com/asuleymanov/steem-go/api/follow"
-	"github.com/asuleymanov/steem-go/api/market_history"
-	"github.com/asuleymanov/steem-go/api/network_broadcast"
-	"github.com/asuleymanov/steem-go/transports"
-	"github.com/asuleymanov/steem-go/transports/websocket"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/api/database"
+	"github.com/luoqeng/steem-go/api/follow"
+	"github.com/luoqeng/steem-go/api/market_history"
+	"github.com/luoqeng/steem-go/api/network_broadcast"
+	"github.com/luoqeng/steem-go/transports"
+	"github.com/luoqeng/steem-go/transports/websocket"
+	"github.com/luoqeng/steem-go/types"
 )
 
 // Client can be used to access Steem remote APIs.

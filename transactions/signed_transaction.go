@@ -8,8 +8,8 @@ import (
 	"encoding/hex"
 	"time"
 
-	"github.com/asuleymanov/steem-go/encoding/transaction"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/encoding/transaction"
+	"github.com/luoqeng/steem-go/types"
 	"github.com/pkg/errors"
 )
 

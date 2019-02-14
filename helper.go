@@ -4,8 +4,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/asuleymanov/steem-go/transactions"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/transactions"
+	"github.com/luoqeng/steem-go/types"
 )
 
 //SetKeys you can specify keys for signing transactions.

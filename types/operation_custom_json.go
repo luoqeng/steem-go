@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/luoqeng/steem-go/encoding/transaction"
 	"github.com/pkg/errors"
 )
 

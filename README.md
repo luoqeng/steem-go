@@ -1,14 +1,14 @@
-# asuleymanov/steem-go
+# luoqeng/steem-go
 
-[![GoDoc](https://godoc.org/github.com/asuleymanov/steem-go?status.svg)](https://godoc.org/github.com/asuleymanov/steem-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/asuleymanov/steem-go)](https://goreportcard.com/report/github.com/asuleymanov/steem-go)
+[![GoDoc](https://godoc.org/github.com/luoqeng/steem-go?status.svg)](https://godoc.org/github.com/luoqeng/steem-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/luoqeng/steem-go)](https://goreportcard.com/report/github.com/luoqeng/steem-go)
 
 Golang RPC client library for [Steem](https://steemit.com).
 
 ## Usage
 
 ```go
-import "github.com/asuleymanov/steem-go"
+import "github.com/luoqeng/steem-go"
 ```
 
 

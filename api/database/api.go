@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/asuleymanov/steem-go/transports"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/transports"
+	"github.com/luoqeng/steem-go/types"
 )
 
-const apiID = "database_api"
+const apiID = "condenser_api."
 
 //API plug-in structure
 type API struct {
@@ -22,8 +22,10 @@ func NewAPI(caller transports.Caller) *API {
 
 var emptyParams = []struct{}{}
 
+//var emptyParams = make([]interface{}, 0)
+
 func (api *API) call(method string, params, resp interface{}) error {
-	return api.caller.Call("call", []interface{}{apiID, method, params}, resp)
+	return api.caller.Call(apiID+method, params, resp)
 }
 
 //GetTrendingTags api request get_trending_tags

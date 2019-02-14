@@ -1,7 +1,7 @@
 package market_history
 
 import (
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/types"
 )
 
 type Ticker struct {

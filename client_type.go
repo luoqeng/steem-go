@@ -1,7 +1,7 @@
 package client
 
 import (
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/types"
 )
 
 //Keys is used as a keystroke for a specific user.

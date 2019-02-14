@@ -1,8 +1,8 @@
 package client
 
 import (
-	"github.com/asuleymanov/steem-go/encoding/wif"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/luoqeng/steem-go/encoding/wif"
+	"github.com/luoqeng/steem-go/types"
 	"github.com/pkg/errors"
 )
 

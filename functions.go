@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/asuleymanov/steem-go/types"
 	"github.com/asuleymanov/translit"
+	"github.com/luoqeng/steem-go/types"
 )
 
 const fdt = `"20060102t150405"`

@@ -625,6 +625,48 @@ func (client *Client) AccountCreate(creator, newAccountName, password string, fe
 	return &OperResp{NameOper: "AccountCreate", Bresp: resp}, err
 }
 
+//AccountCreateWithKeys creating a user in systems
+func (client *Client) AccountCreateWithKeys(creator, newAccountName, ownerPub, activePub, postingPub, memoPub string, fee *types.Asset) (*OperResp, error) {
+	var trx []types.Operation
+
+	empty := map[string]int64{}
+
+	owner := types.Authority{
+		WeightThreshold: 1,
+		AccountAuths:    empty,
+		KeyAuths:        map[string]int64{ownerPub: 1},
+	}
+
+	active := types.Authority{
+		WeightThreshold: 1,
+		AccountAuths:    empty,
+		KeyAuths:        map[string]int64{activePub: 1},
+	}
+
+	posting := types.Authority{
+		WeightThreshold: 1,
+		AccountAuths:    empty,
+		KeyAuths:        map[string]int64{postingPub: 1},
+	}
+
+	jsonMeta := &types.AccountMetadata{}
+
+	tx := &types.AccountCreateOperation{
+		Fee:            fee,
+		Creator:        creator,
+		NewAccountName: newAccountName,
+		Owner:          &owner,
+		Active:         &active,
+		Posting:        &posting,
+		MemoKey:        memoPub,
+		JSONMetadata:   jsonMeta,
+	}
+
+	trx = append(trx, tx)
+	resp, err := client.SendTrx(creator, trx)
+	return &OperResp{NameOper: "AccountCreate", Bresp: resp}, err
+}
+
 //AccountCreateDelegation сreate a user account using delegation.
 func (client *Client) AccountCreateDelegation(creator, newAccountName, password string, delegated, fee *types.Asset) (*OperResp, error) {
 	type Keys struct {

@@ -39,7 +39,7 @@ func run(cls *client.Client) (err error) {
 	password := client.GenPassword()
 	log.Printf("---> account create name = %s password = %s\n", newAccountName, password)
 
-	resp, err := cls.AccountCreate("initminer", newAccountName, password, &types.Asset{Amount: 0, Symbol: "TESTS"})
+	resp, err := cls.AccountCreate("initminer", newAccountName, password, &types.Asset{Amount: 0, Symbol: "STEEM"})
 	if err != nil {
 		return err
 	}

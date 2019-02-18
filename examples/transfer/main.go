@@ -45,7 +45,7 @@ func run(cls *client.Client) (err error) {
 
 	cls.SetKeys(&client.Keys{AKey: []string{key}})
 
-	resp, err := cls.Transfer("initminer", toName, memo, &types.Asset{Amount: amount, Symbol: "TESTS"})
+	resp, err := cls.Transfer("initminer", toName, memo, &types.Asset{Amount: amount, Symbol: "STEEM"})
 	if err != nil {
 		return err
 	}

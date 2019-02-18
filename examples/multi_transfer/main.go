@@ -29,12 +29,12 @@ func run(cls *client.Client) (err error) {
 		client.ArrTransfer{
 			To:     "scott",
 			Memo:   "10000",
-			Amount: types.Asset{Amount: 1, Symbol: "TESTS"},
+			Amount: types.Asset{Amount: 1, Symbol: "STEEM"},
 		},
 		client.ArrTransfer{
 			To:     "luoqeng",
 			Memo:   "10000",
-			Amount: types.Asset{Amount: 1, Symbol: "TESTS"},
+			Amount: types.Asset{Amount: 1, Symbol: "STEEM"},
 		},
 	}
 
